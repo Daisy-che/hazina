@@ -1,5 +1,6 @@
 import React from 'react';
 import { PlusCircle } from 'lucide-react';
+import Image from 'next/image';
 
 const AdvisorShowcase = () => {
   const advisors = [
@@ -56,7 +57,7 @@ const AdvisorShowcase = () => {
                     key={advisor.id}
                     className={`${index === 4 ? 'col-span-1' : ''}`}
                   >
-                    <img
+                    <Image
                       src={advisor.imageUrl}
                       alt={`Financial advisor ${index + 1}`}
                       className="w-20 h-20 rounded-full object-cover"
@@ -64,7 +65,7 @@ const AdvisorShowcase = () => {
                   </div>
                 ))}
                 <div className="col-span-2 col-start-2 row-start-2">
-                  <img
+                  <Image
                     src={advisors[5].imageUrl}
                     alt="Lead financial advisor"
                     className="w-32 h-32 rounded-full object-cover"
@@ -74,11 +75,11 @@ const AdvisorShowcase = () => {
             </div>
           </div>
           
-          {/* Gradient blur effect */}
+        
           <div className="absolute -inset-4 bg-gradient-to-br from-pink-400 via-purple-400 to-blue-500 opacity-30 blur-xl -z-10 rounded-3xl"></div>
         </div>
 
-        {/* Right side - Text Content */}
+       
         <div className="text-white lg:pl-8">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
             Expert advisors help you reach financial goals faster

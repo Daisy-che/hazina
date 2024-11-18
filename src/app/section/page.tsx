@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const FeaturesSection = () => {
   const features = [
     {
@@ -33,7 +33,7 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div key={index} className="rounded-lg p-6  transform hover:scale-105 transition-transform duration-300">
               <div className="mb-4">
-                <img
+                <Image
                   src={feature.imageSrc}
                   alt={feature.altText}
                   className="w-90 h-90 object-cover rounded-lg"
@@ -54,7 +54,7 @@ const FeaturesSection = () => {
             </p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3">
-            <img 
+            <Image 
               src="/images/window.webp" 
               alt="Hazina Africa Investment Platform" 
               className="w-full h-auto rounded-2xl shadow-md object-cover"
@@ -62,10 +62,10 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* Financial Advisors Section */}
+       
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 py-12 transform hover:scale-105 transition-transform duration-300">
           <div className="w-full md:w-1/2 lg:w-1/3">
-            <img 
+            <Image
               src="/images/halima.webp" 
               alt="Financial Advisors Team" 
               className="w-full h-auto rounded-2xl shadow-md object-cover"
@@ -79,7 +79,7 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* Stock Portfolio Section */}
+        
         <div className="flex flex-col md:flex-row items-center justify-between gap-12 py-12 transform hover:scale-105 transition-transform duration-300">
           <div className="text-white max-w-md md:max-w-lg space-y-6">
             <h2 className="text-4xl font-bold mb-3">Build and manage your stock portfolio</h2>
@@ -88,7 +88,7 @@ const FeaturesSection = () => {
             </p>
           </div>
           <div className="w-full md:w-1/2 lg:w-1/3">
-            <img 
+            <Image
               src="/images/investment.webp" 
               alt="Hazina Africa Investment Platform" 
               className="w-full h-auto rounded-2xl shadow-md object-cover"
@@ -97,7 +97,7 @@ const FeaturesSection = () => {
         </div>
       </div>
 
-      {/* Final Section */}
+      
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="text-center">
@@ -121,16 +121,15 @@ const FeaturesSection = () => {
       </section>
       <section className="w-full  p-8">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-16 bg-[]">
-        {/* Left side - Image */}
+       
         <div className="w-full md:w-1/2">
-          <img 
+          <Image 
             src="/images/break image.webp" 
             alt="Financial Breakdown Weekly Chart" 
             className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
           />
         </div>
 
-        {/* Right side - Content */}
         <div className="w-full md:w-1/2 space-y-6">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
             Comprehensive financial tracking across all your accounts

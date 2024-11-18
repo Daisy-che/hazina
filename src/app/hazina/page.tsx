@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const HeroSection = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const HeroSection = () => {
       <nav className="p-4">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-white text-xl font-bold">
-          <img
+          <Image
               src="/images/hazina-africa-logo.png"
               alt="Logo"
               className="h-12"
@@ -95,7 +96,7 @@ const HeroSection = () => {
             Secure Your Future
           </h1>
           <p className="text-gray-300 text-base md:text-lg lg:text-xl mb-8 max-w-2xl mx-auto">
-            Take control of your financial journey with Hazina Africa's comprehensive tools. 
+            Take control of your financial journey with Hazina Africas comprehensive tools. 
             From seamless cash and M-Pesa tracking to strategic investments in local and 
             international markets, we provide the expertise and technology you need to build 
             wealth and create a lasting legacy.
@@ -118,20 +119,20 @@ const HeroSection = () => {
           
           <div className="flex items-center justify-center">
            
-            <img src='/images/mage.svg'/>
+            <Image src='/images/mage.svg'alt='mage'/>
             
           </div>
 
           <div className="flex items-center justify-center">
-          <img src='/images/jupiter1.svg'/>
+          <Image src='/images/jupiter1.svg' alt='jupiter'/>
           </div>
 
           <div className="flex items-center justify-center">
-          <img src='/images/circuit.svg'/>
+          <Image src='/images/circuit.svg' alt='circuit'/>
           </div>
 
           <div className="flex items-center justify-center">
-          <img src='/images/sunset.svg'/>
+          <Image src='/images/sunset.svg' alt='sunset'/>
           </div>
         </div>
 

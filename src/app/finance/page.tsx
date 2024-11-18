@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 interface FAQ {
   question: string;
@@ -108,7 +109,7 @@ const FAQSection: React.FC = () => {
     {/* Logo and Branding */}
     <div className="w-full md:w-1/4">
       <h2 className="text-white text-2xl font-bold flex items-center">
-        <img src="/images/hazina-africa-logo.png" alt="Logo" className="w-60 h-10 mr-2" /> 
+        <Image src="/images/hazina-africa-logo.png" alt="Logo" className="w-60 h-10 mr-2" /> 
       </h2>
       <p className="text-sm text-gray-400 mt-1 ml-4">Build Wealth</p>
     </div>
