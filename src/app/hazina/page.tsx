@@ -20,6 +20,8 @@ const HeroSection = () => {
           <Image
               src="/images/hazina-africa-logo.png"
               alt="Logo"
+              width={300}
+              height={400}
               className="h-12"
             />
           </div>
@@ -119,20 +121,20 @@ const HeroSection = () => {
           
           <div className="flex items-center justify-center">
            
-            <Image src='/images/mage.svg'alt='mage'/>
+            <Image src='/images/mage.svg'alt='mage'width={200} height={200}/>
             
           </div>
 
           <div className="flex items-center justify-center">
-          <Image src='/images/jupiter1.svg' alt='jupiter'/>
+          <Image src='/images/jupiter1.svg' alt='jupiter'width={200} height={200}/>
           </div>
 
           <div className="flex items-center justify-center">
-          <Image src='/images/circuit.svg' alt='circuit'/>
+          <Image src='/images/circuit.svg' alt='circuit'width={200} height={200}/>
           </div>
 
           <div className="flex items-center justify-center">
-          <Image src='/images/sunset.svg' alt='sunset'/>
+          <Image src='/images/sunset.svg' alt='sunset'width={200} height={200}/>
           </div>
         </div>
 

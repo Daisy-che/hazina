@@ -60,7 +60,10 @@ const AdvisorShowcase = () => {
                     <Image
                       src={advisor.imageUrl}
                       alt={`Financial advisor ${index + 1}`}
+                      width={20} 
+                      height={20}
                       className="w-20 h-20 rounded-full object-cover"
+
                     />
                   </div>
                 ))}
@@ -68,6 +71,8 @@ const AdvisorShowcase = () => {
                   <Image
                     src={advisors[5].imageUrl}
                     alt="Lead financial advisor"
+                    width={20} 
+                    height={20}
                     className="w-32 h-32 rounded-full object-cover"
                   />
                 </div>

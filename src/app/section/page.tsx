@@ -36,6 +36,7 @@ const FeaturesSection = () => {
                 <Image
                   src={feature.imageSrc}
                   alt={feature.altText}
+                  width={400} height={400}
                   className="w-90 h-90 object-cover rounded-lg"
                 />
               </div>
@@ -57,6 +58,7 @@ const FeaturesSection = () => {
             <Image 
               src="/images/window.webp" 
               alt="Hazina Africa Investment Platform" 
+              width={400} height={400}
               className="w-full h-auto rounded-2xl shadow-md object-cover"
             />
           </div>
@@ -68,6 +70,7 @@ const FeaturesSection = () => {
             <Image
               src="/images/halima.webp" 
               alt="Financial Advisors Team" 
+              width={400} height={400}
               className="w-full h-auto rounded-2xl shadow-md object-cover"
             />
           </div>
@@ -90,7 +93,8 @@ const FeaturesSection = () => {
           <div className="w-full md:w-1/2 lg:w-1/3">
             <Image
               src="/images/investment.webp" 
-              alt="Hazina Africa Investment Platform" 
+              alt="Hazina Africa Investment Platform"
+              width={400} height={400} 
               className="w-full h-auto rounded-2xl shadow-md object-cover"
             />
           </div>
@@ -120,12 +124,13 @@ const FeaturesSection = () => {
         </div>
       </section>
       <section className="w-full  p-8">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-16 bg-[]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 py-16 bg-[#272e32] rounded-3xl shadow-2xl">
        
         <div className="w-full md:w-1/2">
           <Image 
             src="/images/break image.webp" 
             alt="Financial Breakdown Weekly Chart" 
+            width={400} height={400}
             className="w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
           />
         </div>
